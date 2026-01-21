@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
 	int balance=0;
-	int spin=1234, pin;
+	int spin=1234, pin,menu,amount;
 	printf("Enter pin code: ");
 	scanf("%d", &pin);
 	
@@ -41,7 +41,7 @@ int main(){
 						printf("Exit");
 						break;
 						default:
-							printf("Invalid menu selection. \n")
+							printf("Invalid menu selection. \n");
 				
 				
 			
@@ -52,4 +52,4 @@ int main(){
 		printf("Incorrect pin.");
 	}
 }
-return 0;
+
