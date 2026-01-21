@@ -7,7 +7,7 @@ int main(){
 	
 	if(spin==pin){
 		printf("Menu\n");
-		printf("1.Balance Inquiry. \n2.Cash Withdrawl. \n3.Deposit. \n4.Exits. \nSelect menu: ");
+		printf("1.Balance Inquiry. \n2.Cash Withdrawal. \n3.Deposit. \n4.Exit. \nSelect menu: ");
 		scanf("%d", &menu);
 		
 		
@@ -19,23 +19,22 @@ int main(){
 				case 2:
 				printf("Enter amount: ");
 				scanf("%d", &amount);
-				
+
 				if(balance<amount){
 					printf("Insufficient balance.");
 				}else{
 					balance-=amount;
-					printf("Withdrawl amount = %d\n", amount);
+					printf("Withdrawal amount = %d\n", amount);
 					printf("Remaining balance = %d\n", balance);
 				}
 				break;
 				
 				case 3:
 					printf("Enter amount: ");
-					scanf("%d", amount);
-					balance=amount;
+					scanf("%d", &amount);
+					balance += amount;  
 					printf("Total balance = %d", balance);
-					printf("Amount deposited sucessfully\n");
-					break;
+					printf("Amount deposited successfully\n");
 					
 					case 4:
 						printf("Exit");
