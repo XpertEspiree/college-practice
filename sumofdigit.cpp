@@ -13,6 +13,7 @@ int main(){
 		sum=sum+digit;
 		number=number/10;
 	}
-	printf("Sum of digit of number %d is = %d", number, sum);
+	printf("Sum of digit of number is = %d", sum);
 	return 0;
 }
+
